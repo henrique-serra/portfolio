@@ -2,6 +2,77 @@
 <html lang="en">
 <%- include('./partials/head.ejs') %>
 <body>
-    <h1>About</h1>
+    <%- include('./partials/nav.ejs') %>
+    
+    <main>
+        <section class="section">
+            <div class="container">
+                <div class="about-content">
+                    <h1>About Me</h1>
+                    
+                    <p>Hello! I'm Henrique Serra, a passionate full-stack web developer with over 5 years of experience creating digital solutions that combine functionality with elegant design. Based in Brazil, I specialize in modern web technologies and have a deep appreciation for clean code and intuitive user experiences.</p>
+                    
+                    <p>My journey in web development began with a curiosity about how websites work, which quickly evolved into a passion for building applications that solve real-world problems. I believe that great software should be both powerful and accessible, with interfaces that feel natural and code that stands the test of time.</p>
+                    
+                    <div class="visual-element"></div>
+                    
+                    <h2 style="color: var(--accent-primary); margin: 48px 0 32px 0;">My Philosophy</h2>
+                    
+                    <p>I approach every project with a user-first mindset, ensuring that technical excellence never comes at the expense of usability. Whether I'm architecting a complex backend system or crafting a pixel-perfect frontend interface, I maintain focus on performance, accessibility, and maintainability.</p>
+                    
+                    <p>Continuous learning is at the core of my professional growth. The web development landscape evolves rapidly, and I stay current with emerging technologies while maintaining expertise in established frameworks and best practices.</p>
+                    
+                    <h2 style="color: var(--accent-primary); margin: 48px 0 32px 0;">Professional Journey</h2>
+                    
+                    <div class="timeline">
+                        <div class="timeline-item">
+                            <div class="timeline-year">2024 - Present</div>
+                            <div class="timeline-title">Senior Full Stack Developer</div>
+                            <div class="timeline-description">Leading development of scalable web applications using React, Node.js, and cloud technologies. Mentoring junior developers and establishing best practices for code quality and deployment.</div>
+                        </div>
+                        
+                        <div class="timeline-item">
+                            <div class="timeline-year">2022 - 2024</div>
+                            <div class="timeline-title">Full Stack Developer</div>
+                            <div class="timeline-description">Developed and maintained multiple client projects, specializing in e-commerce platforms and business management systems. Implemented responsive designs and optimized performance across various platforms.</div>
+                        </div>
+                        
+                        <div class="timeline-item">
+                            <div class="timeline-year">2021 - 2022</div>
+                            <div class="timeline-title">Frontend Developer</div>
+                            <div class="timeline-description">Focused on creating intuitive user interfaces with React and modern CSS frameworks. Collaborated closely with design teams to implement pixel-perfect designs and smooth user interactions.</div>
+                        </div>
+                        
+                        <div class="timeline-item">
+                            <div class="timeline-year">2019 - 2021</div>
+                            <div class="timeline-title">Junior Web Developer</div>
+                            <div class="timeline-description">Started my professional journey building foundational skills in HTML, CSS, JavaScript, and various content management systems. Learned the importance of clean code and collaborative development.</div>
+                        </div>
+                        
+                        <div class="timeline-item">
+                            <div class="timeline-year">2018 - 2019</div>
+                            <div class="timeline-title">Computer Science Studies</div>
+                            <div class="timeline-description">Completed formal education in computer science fundamentals, including algorithms, data structures, and software engineering principles that continue to inform my development approach.</div>
+                        </div>
+                    </div>
+                    
+                    <div class="visual-element"></div>
+                    
+                    <h2 style="color: var(--accent-primary); margin: 48px 0 32px 0;">Beyond Code</h2>
+                    
+                    <p>When I'm not coding, you'll find me exploring new technologies through side projects, contributing to open-source initiatives, or sharing knowledge with the developer community through blog posts and mentorship.</p>
+                    
+                    <p>I'm passionate about the intersection of technology and creativity, always looking for ways to push the boundaries of what's possible on the web while maintaining focus on practical, user-centered solutions.</p>
+                    
+                    <div style="text-align: center; margin-top: 48px;">
+                        <a href="/" class="btn">View My Work</a>
+                        <a href="/contact-me" class="btn btn-secondary">Get In Touch</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <%- include('./partials/footer.ejs') %>
 </body>
 </html>

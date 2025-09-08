@@ -2,6 +2,22 @@
 <html lang="en">
 <%- include('./partials/head.ejs') %>
 <body>
-    <h1>Not Found</h1>
+    <%- include('./partials/nav.ejs') %>
+    
+    <main>
+        <section class="error-page">
+            <div class="container">
+                <h1>404</h1>
+                <p>The page you're looking for doesn't exist.</p>
+                <p>Let's get you back on track.</p>
+                <div style="margin-top: 32px;">
+                    <a href="/" class="btn">Go Home</a>
+                    <a href="/about" class="btn btn-secondary">About Me</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <%- include('./partials/footer.ejs') %>
 </body>
 </html>

@@ -6,6 +6,10 @@ export const about = function about(req, res) {
     res.render('about', { title: 'About' });
 };
 
+export const contact = function contact(req, res) {
+    res.render('contact', { title: 'Contact Me'});
+};
+
 export const notFound = function notFound(req, res) {
     res.status(404).render('404', { title: 'Not Found' });
 };

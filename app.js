@@ -3,7 +3,7 @@ import express from 'express';
 import url from 'url';
 import path from 'path';
 import morgan from 'morgan';
-import { index, about, notFound } from './controllers/controller.js';
+import { index, about, contact, notFound } from './controllers/controller.js';
 
 const __filename = url.fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
@@ -21,8 +21,8 @@ app.use(morgan('dev'));
 
 // routes
 app.get('/', index);
-
 app.get('/about', about);
+app.get('/contact-me', contact);
 
 // 404 page
 app.use(notFound);

@@ -2,6 +2,116 @@
 <html lang="en">
 <%- include('./partials/head.ejs') %>
 <body>
-    <h1>Hello World</h1>
+    <%- include('./partials/nav.ejs') %>
+    
+    <main>
+        <!-- Hero Section -->
+        <section class="hero">
+            <div class="container">
+                <h1>Full Stack Developer</h1>
+                <p>Creating elegant web experiences with modern technologies. Passionate about clean code, intuitive design, and delivering solutions that make a difference.</p>
+                <img src="/hero.svg" alt="Developer illustration" class="hero-image">
+                <div style="margin-top: 32px;">
+                    <a href="#projects" class="btn">View My Work</a>
+                    <a href="/about" class="btn btn-secondary">About Me</a>
+                </div>
+            </div>
+        </section>
+
+        <div class="visual-element"></div>
+
+        <!-- Skills Section -->
+        <section class="section">
+            <div class="container">
+                <h2>Technologies I Work With</h2>
+                <div class="skills-list">
+                    <span class="skill-tag">JavaScript</span>
+                    <span class="skill-tag">TypeScript</span>
+                    <span class="skill-tag">React</span>
+                    <span class="skill-tag">Node.js</span>
+                    <span class="skill-tag">Express</span>
+                    <span class="skill-tag">MongoDB</span>
+                    <span class="skill-tag">PostgreSQL</span>
+                    <span class="skill-tag">HTML5</span>
+                    <span class="skill-tag">CSS3</span>
+                    <span class="skill-tag">Sass</span>
+                    <span class="skill-tag">Git</span>
+                    <span class="skill-tag">Docker</span>
+                    <span class="skill-tag">AWS</span>
+                    <span class="skill-tag">Figma</span>
+                </div>
+            </div>
+        </section>
+
+        <!-- Projects Section -->
+        <section class="section" id="projects">
+            <div class="container">
+                <h2>Featured Projects</h2>
+                <div class="projects-grid">
+                    <div class="project-card">
+                        <div class="project-card__text">
+                            <h3>E-Commerce Platform</h3>
+                            <p>A modern e-commerce solution built with React and Node.js, featuring real-time inventory management, secure payment processing, and responsive design.</p>
+                        </div>
+                        <a href="#" class="btn">View Project</a>
+                    </div>
+                    
+                    <div class="project-card">
+                        <div class="project-card__text">
+                            <h3>Task Management App</h3>
+                            <p>Collaborative project management tool with real-time updates, drag-and-drop functionality, and team collaboration features built with React and Socket.io.</p>
+                        </div>
+                        <a href="#" class="btn">View Project</a>
+                    </div>
+                    
+                    <div class="project-card">
+                        <div class="project-card__text">
+                            <h3>Portfolio Website</h3>
+                            <p>Responsive portfolio website with modern design principles, optimized performance, and seamless user experience. Built with Express and EJS templating.</p>
+                        </div>
+                        <a href="#" class="btn">View Project</a>
+                    </div>
+                    
+                    <div class="project-card">
+                        <div class="project-card__text">
+                            <h3>Weather Dashboard</h3>
+                            <p>Interactive weather application with location-based forecasts, beautiful data visualizations, and progressive web app capabilities.</p>
+                        </div>
+                        <a href="#" class="btn">View Project</a>
+                    </div>
+                    
+                    <div class="project-card">
+                        <div class="project-card__text">
+                            <h3>Social Media Analytics</h3>
+                            <p>Comprehensive analytics dashboard for social media performance tracking with real-time data processing and intuitive charts.</p>
+                        </div>
+                        <a href="#" class="btn">View Project</a>
+                    </div>
+                    
+                    <div class="project-card">
+                        <div class="project-card__text">
+                            <h3>Learning Management System</h3>
+                            <p>Educational platform with course management, student progress tracking, and interactive learning modules. Features video streaming and quiz functionality.</p>
+                        </div>
+                        <a href="#" class="btn">View Project</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Preview Section -->
+        <section class="section" style="background-color: var(--near-white);">
+            <div class="container">
+                <h2>About My Approach</h2>
+                <div style="max-width: 800px; margin: 0 auto; text-align: center;">
+                    <p>I believe in writing clean, maintainable code that scales well and provides exceptional user experiences. My development process focuses on understanding user needs, implementing best practices, and continuously learning new technologies to deliver innovative solutions.</p>
+                    <p>With a background in both frontend and backend development, I enjoy tackling complex challenges and transforming ideas into robust, user-friendly applications.</p>
+                    <a href="/about" class="btn" style="margin-top: 24px;">Learn More About Me</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <%- include('./partials/footer.ejs') %>
 </body>
 </html>
